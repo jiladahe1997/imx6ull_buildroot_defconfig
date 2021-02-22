@@ -1,0 +1,13 @@
+[Unit]
+Description=Frp Client Service
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5s
+ExecStart=/root/frp_0.35.1_linux_arm/frpc -c /root/frp_0.35.1_linux_arm/frpc.ini
+ExecReload=/root/frp_0.35.1_linux_arm/frpc reload -c /root/frp_0.35.1_linux_arm/frpc.ini
+
+[Install]
+WantedBy=multi-user.target
