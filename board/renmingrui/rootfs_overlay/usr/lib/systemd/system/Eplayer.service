@@ -1,6 +1,6 @@
 [Unit]
 Description=Eplayer startup
-After=network.target
+After=frp.service
 
 [Service]
 Type=simple
