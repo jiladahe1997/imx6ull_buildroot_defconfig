@@ -3,7 +3,7 @@ Description=Eplayer startup
 After=frp.service
 
 [Service]
-Type=simple
+Type=idle
 ExecStart=/root/Eplayer.sh
 
 [Install]
